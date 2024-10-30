@@ -140,4 +140,4 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/login/'
 
 db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default']= dj_database_url.parse("postgresql://db_sistema_facturacion_user:aucTp9dJpvfb4un6kA1Si7vdicwhS2hq@dpg-csgo11o8fa8c7390qcv0-a.oregon-postgres.render.com/db_sistema_facturacion")
+DATABASES['default']= dj_database_url.parse(config("DATABASE_URL"))
